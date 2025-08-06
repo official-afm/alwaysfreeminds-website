@@ -51,7 +51,7 @@
           <span class="text-2xl font-bold text-purple-600">FREE</span>
           <p class="text-gray-500 text-sm">30 minutes</p>
         </div>
-        <p class="text-gray-600 mb-6 text-center">Planning session to design a custom workshop for your team.</p>
+        <p class="text-gray-600 mb-6 text-center">Free planning call for workshops starting at $1,500</p>
         <button @click="openSavvyCal('workshop')" class="w-full bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors">
           Plan Workshop
         </button>
