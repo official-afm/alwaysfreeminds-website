@@ -14,20 +14,12 @@
           >
             Book Strategy Call - $150
           </button>
-          <button 
-            @click="scrollToWorkshops" 
+          <a 
+            href="#workshops" 
             class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary-900 transition-all duration-200 shadow-lg hover:shadow-xl"
           >
             Corporate Training
-          </button>
-        </div>
-        
-        <!-- Available slots indicator -->
-        <div class="mt-6 inline-flex items-center bg-white/20 backdrop-blur-sm rounded-full px-6 py-3">
-          <svg class="w-5 h-5 text-yellow-300 mr-2" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-          </svg>
-          <span class="text-sm font-semibold">{{ availableSlots }} Strategy Sessions Available This Month</span>
+          </a>
         </div>
       </div>
     </section>
@@ -86,7 +78,7 @@
               <li>• ROI measurement frameworks</li>
             </ul>
             <button 
-              @click="openSavvyCal('strategy')" 
+              @click="scrollToBooking" 
               class="block w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 text-center"
             >
               Book Session
@@ -115,12 +107,12 @@
               <li>• Follow-up implementation guide</li>
               <li>• 30-day email support included</li>
             </ul>
-            <button 
-              @click="openSavvyCal('workshop')" 
+            <a 
+              href="#workshops" 
               class="block w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 text-center"
             >
               Request Proposal
-            </button>
+            </a>
           </div>
 
           <!-- Speaking Engagements -->
@@ -142,12 +134,12 @@
               <li>• Nonprofit galas and events</li>
               <li>• Virtual and in-person options</li>
             </ul>
-            <button 
-              @click="scrollToContact" 
+            <a 
+              href="#speaking" 
               class="block w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 text-center"
             >
               Book Speaking
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -203,10 +195,9 @@
       </div>
     </section>
 
-    <!-- Enhanced Booking Section with SavvyCal Integration -->
+    <!-- Booking Section with SavvyCal -->
     <section id="book-consultation" ref="bookingSection" class="py-20 bg-white">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Main Booking Hero -->
         <div class="bg-gradient-to-br from-primary-600 to-primary-800 rounded-2xl p-8 md:p-12 text-white text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Hiring Strategy?</h2>
           <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
@@ -223,115 +214,22 @@
             </div>
           </div>
 
-          <button 
-            @click="openSavvyCal('strategy')" 
-            class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-300 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 mb-8"
+          <a 
+            href="https://savvycal.com/greg-AlwaysFreeMinds/strategy" 
+            target="_blank"
+            class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-300 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 mb-8 inline-block"
           >
             Book Your Strategy Session Now
-          </button>
+          </a>
         </div>
 
-        <!-- Quick Booking Options -->
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
-          <!-- Free Chat -->
-          <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-3.582 8-8 8a8.001 8.001 0 01-7.93-6.7c-.02-.12-.016-.25.04-.37.124-.27.395-.43.684-.43h.08c.312 0 .59.187.712.475A6 6 0 1012 6V4a2 2 0 012-2h2a2 2 0 012 2v2a6 6 0 110 12z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Chat with Greg</h3>
-            <div class="text-center mb-4">
-              <span class="text-2xl font-bold text-green-600">FREE</span>
-              <p class="text-gray-500 text-sm">30 minutes</p>
-            </div>
-            <p class="text-gray-600 mb-6 text-center">
-              Quick conversation to understand your challenges and see if we're a good fit.
-            </p>
-            <button 
-              @click="openSavvyCal('discovery')" 
-              class="w-full bg-green-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-600 transition-colors duration-200"
-            >
-              Book Free Chat
-            </button>
-          </div>
-
-          <!-- Strategy Session -->
-          <div class="bg-white p-8 rounded-xl shadow-xl border-2 border-primary-200 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 relative">
-            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-medium">
-              Most Popular
-            </div>
-            <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Strategy Session</h3>
-            <div class="text-center mb-4">
-              <span class="text-2xl font-bold text-primary-600">$150</span>
-              <p class="text-gray-500 text-sm">60 minutes</p>
-            </div>
-            <p class="text-gray-600 mb-6 text-center">
-              Deep dive analysis with a custom 30-day action plan to get results fast.
-            </p>
-            <button 
-              @click="openSavvyCal('strategy')" 
-              class="w-full bg-primary-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200"
-            >
-              Book Strategy Session
-            </button>
-          </div>
-
-          <!-- Workshop Planning -->
-          <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
-              </svg>
-            </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3 text-center">Workshop Planning</h3>
-            <div class="text-center mb-4">
-              <span class="text-2xl font-bold text-purple-600">FREE</span>
-              <p class="text-gray-500 text-sm">30 minutes</p>
-            </div>
-            <p class="text-gray-600 mb-6 text-center">
-              Planning session to design a custom workshop for your team.
-            </p>
-            <button 
-              @click="openSavvyCal('workshop')" 
-              class="w-full bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-200"
-            >
-              Plan Workshop
-            </button>
-          </div>
-        </div>
-
-        <!-- Inline Calendar Embed -->
-        <div class="max-w-4xl mx-auto">
-          <div class="text-center mb-8">
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">
-              Select Your Preferred Time
-            </h3>
-            <p class="text-lg text-gray-600">
-              Choose a time that works for you - payment collected securely after booking
-            </p>
-          </div>
-          
-          <div class="bg-white rounded-2xl shadow-xl p-6">
-            <div 
-              :data-savvycal-embed="mainBookingLink"
-              data-embed-type="inline"
-              data-theme="modern"
-              class="savvycal-embed"
-              style="min-width:320px;height:600px;">
-            </div>
-          </div>
-        </div>
+        <!-- SavvyCal Component -->
+        <SavvyCalBooking />
       </div>
     </section>
 
     <!-- Corporate Training Details -->
-    <section id="workshops" ref="workshopsSection" class="py-20 bg-gray-50">
+    <section id="workshops" class="py-20 bg-gray-50">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Corporate Training Programs</h2>
@@ -393,12 +291,13 @@
               <p class="text-gray-600 mb-4 text-sm">
                 Contact me to discuss your organization's specific needs and create a custom proposal.
               </p>
-              <button 
-                @click="openSavvyCal('workshop')" 
+              <a 
+                href="https://savvycal.com/greg-AlwaysFreeMinds/workshop"
+                target="_blank" 
                 class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200"
               >
                 Schedule Planning Call
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -406,7 +305,7 @@
     </section>
 
     <!-- Contact Form -->
-    <section id="contact-form" ref="contactSection" class="py-20 bg-white">
+    <section id="contact-form" class="py-20 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">Let's Discuss Your Needs</h2>
@@ -435,3 +334,97 @@
                 <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
                   <option>Strategy Consulting</option>
                   <option>Corporate Training</option>
+                  <option>Speaking Engagement</option>
+                  <option>Custom Program</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-700 mb-2">Tell me about your goals</label>
+                <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="What challenges are you facing? What outcomes are you hoping to achieve?"></textarea>
+              </div>
+              <button type="submit" class="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200">
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <div>
+            <div class="bg-gray-50 p-8 rounded-lg">
+              <h3 class="text-xl font-semibold text-gray-900 mb-6">Get In Touch</h3>
+              
+              <div class="space-y-4">
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                  <span class="text-gray-700">gregory@alwaysfreeminds.com</span>
+                </div>
+                
+                <div class="flex items-center">
+                  <svg class="w-5 h-5 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span class="text-gray-700">Response within 24 hours</span>
+                </div>
+              </div>
+
+              <div class="mt-8">
+                <h4 class="font-semibold text-gray-900 mb-4">Typical Project Timeline</h4>
+                <div class="space-y-3 text-sm text-gray-600">
+                  <div class="flex justify-between">
+                    <span>Discovery Call</span>
+                    <span>Day 1</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Proposal & Contract</span>
+                    <span>Days 2-3</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Program Delivery</span>
+                    <span>Week 2-4</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Footer -->
+    <section class="bg-primary-800 text-white py-16">
+      <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Unlock Your Organization's Potential?</h2>
+        <p class="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
+          Every person deserves a second chance. Every organization deserves access to untapped talent. 
+          Let's make both happen.
+        </p>
+        <button 
+          @click="scrollToBooking"
+          class="inline-flex items-center justify-center bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-300 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
+        >
+          Start Your Transformation Today
+        </button>
+      </div>
+    </section>
+  </div>
+</template>
+
+<script>
+import SavvyCalBooking from '@/components/booking/SavvyCalBooking.vue'
+
+export default {
+  name: 'ConsultingRevenue',
+  components: {
+    SavvyCalBooking
+  },
+  methods: {
+    scrollToBooking() {
+      this.$refs.bookingSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+}
+</script>
