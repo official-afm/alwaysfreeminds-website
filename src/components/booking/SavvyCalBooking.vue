@@ -273,10 +273,11 @@ export default {
       }
     },
     
+    /* eslint-disable no-undef */
     trackPageView() {
       // Google Analytics 4 tracking
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'page_view', {
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "page_view", {
           page_title: `SavvyCal Booking - ${this.viewType}`,
           page_location: window.location.href,
           booking_type: this.viewType
@@ -284,21 +285,22 @@ export default {
       }
       
       // Facebook Pixel tracking
-      if (typeof fbq !== 'undefined') {
-        fbq('track', 'ViewContent', {
+      if (typeof window !== "undefined" && window.fbq) {
+        window.fbq("track", "ViewContent", {
           content_name: `${this.viewType}_booking_page`,
-          content_category: 'booking'
+          content_category: "booking"
         });
       }
       
       console.log(`Page view tracked: ${this.viewType} booking page`);
     },
     
+    /* eslint-disable no-undef */
     trackBookingClick(bookingType) {
       // Google Analytics 4 tracking
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'booking_click', {
-          event_category: 'savvycal',
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "booking_click", {
+          event_category: "savvycal",
           event_label: bookingType,
           booking_view_type: this.viewType,
           value: this.getBookingValue(bookingType)
@@ -306,11 +308,11 @@ export default {
       }
       
       // Facebook Pixel tracking
-      if (typeof fbq !== 'undefined') {
-        fbq('track', 'Schedule', {
+      if (typeof window !== "undefined" && window.fbq) {
+        window.fbq("track", "Schedule", {
           content_name: `${bookingType}_booking`,
           value: this.getBookingValue(bookingType),
-          currency: 'USD'
+          currency: "USD"
         });
       }
       
