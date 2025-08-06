@@ -224,7 +224,7 @@
         </div>
 
         <!-- SavvyCal Component -->
-        <SavvyCalBooking />
+        <SavvyCalBooking viewType="corporate" :showInlineCalendar="true" />
       </div>
     </section>
 
