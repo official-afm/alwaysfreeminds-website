@@ -11,3 +11,6 @@ app.use(router)
 
 app.mount('#app')
 import './assets/css/effects.css'
+
+// Import global effects CSS
+import './assets/css/effects.css'
