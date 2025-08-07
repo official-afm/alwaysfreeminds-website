@@ -12,14 +12,8 @@
             @click="scrollToBooking" 
             class="inline-flex items-center justify-center bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-300 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
           >
-            Book Strategy Call - $150
+            Let's Have a Conversation
           </button>
-          <a 
-            href="#workshops" 
-            class="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary-900 transition-all duration-200 shadow-lg hover:shadow-xl"
-          >
-            Corporate Training
-          </a>
         </div>
       </div>
     </section>
@@ -47,106 +41,8 @@
       </div>
     </section>
 
-    <!-- Services -->
-    <section id="services" class="py-20 bg-white">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">How I Help Organizations Succeed</h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Real strategies from real experience. I don't just teach theory—I share what actually works.
-          </p>
-        </div>
-
-        <div class="grid lg:grid-cols-3 gap-8">
-          <!-- Individual Consulting -->
-          <div class="bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-xl">
-            <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
-              <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-              </svg>
-            </div>
-            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Strategy Consulting</h3>
-            <div class="text-3xl font-bold text-primary-600 mb-4">$150/hour</div>
-            <p class="text-gray-600 mb-6">
-              One-on-one guidance for implementing second-chance hiring, building inclusive teams, and creating transformation-focused programs.
-            </p>
-            <ul class="text-sm text-gray-600 space-y-2 mb-8">
-              <li>• Second-chance hiring strategy</li>
-              <li>• Bias reduction techniques</li>
-              <li>• Team integration planning</li>
-              <li>• Policy development guidance</li>
-              <li>• ROI measurement frameworks</li>
-            </ul>
-            <button 
-              @click="scrollToBooking" 
-              class="block w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 text-center"
-            >
-              Book Session
-            </button>
-          </div>
-
-          <!-- Corporate Training -->
-          <div class="bg-gradient-to-br from-primary-50 to-primary-100 p-8 rounded-xl border-2 border-primary-200 relative">
-            <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary-600 text-white px-4 py-1 rounded-full text-sm font-medium">
-              Most Popular
-            </div>
-            <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
-              <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-              </svg>
-            </div>
-            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Corporate Training</h3>
-            <div class="text-3xl font-bold text-primary-600 mb-4">$2,500/day</div>
-            <p class="text-gray-600 mb-6">
-              Interactive workshops that transform how your team thinks about hiring, retention, and building inclusive cultures.
-            </p>
-            <ul class="text-sm text-gray-600 space-y-2 mb-8">
-              <li>• Half or full-day workshops</li>
-              <li>• Custom curriculum for your industry</li>
-              <li>• Interactive exercises and role-playing</li>
-              <li>• Follow-up implementation guide</li>
-              <li>• 30-day email support included</li>
-            </ul>
-            <a 
-              href="#workshops" 
-              class="block w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 text-center"
-            >
-              Request Proposal
-            </a>
-          </div>
-
-          <!-- Speaking Engagements -->
-          <div class="bg-gradient-to-br from-gray-50 to-gray-100 p-8 rounded-xl">
-            <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
-              <svg class="w-8 h-8 text-primary-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
-              </svg>
-            </div>
-            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Speaking</h3>
-            <div class="text-3xl font-bold text-primary-600 mb-4">$3,500+</div>
-            <p class="text-gray-600 mb-6">
-              Powerful keynotes and panels that inspire, educate, and drive action around second chances and transformation.
-            </p>
-            <ul class="text-sm text-gray-600 space-y-2 mb-8">
-              <li>• Conference keynotes</li>
-              <li>• University presentations</li>
-              <li>• Panel discussions</li>
-              <li>• Nonprofit galas and events</li>
-              <li>• Virtual and in-person options</li>
-            </ul>
-            <a 
-              href="#speaking" 
-              class="block w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200 text-center"
-            >
-              Book Speaking
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Problem/Solution -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-white">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -171,7 +67,7 @@
             </div>
           </div>
           <div>
-            <h3 class="text-2xl font-semibold text-gray-900 mb-6">What Changes When You Work With Me</h3>
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">What Changes When You Embrace Second Chances</h3>
             <div class="space-y-4 text-gray-600">
               <p class="flex items-start">
                 <span class="text-green-500 mr-3 mt-1">✓</span>
@@ -187,7 +83,7 @@
               </p>
               <p class="flex items-start">
                 <span class="text-green-500 mr-3 mt-1">✓</span>
-                Teams that understand the value of second chances
+                Teams that understand the value of transformation
               </p>
             </div>
           </div>
@@ -195,228 +91,66 @@
       </div>
     </section>
 
-    <!-- Booking Section with SavvyCal -->
-    <section id="book-consultation" ref="bookingSection" class="py-20 bg-white">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-gradient-to-br from-primary-600 to-primary-800 rounded-2xl p-8 md:p-12 text-white text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Hiring Strategy?</h2>
-          <p class="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
-            Book a 60-minute strategy session where we'll identify opportunities, address challenges, and create an action plan tailored to your organization.
-          </p>
-          
-          <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 mb-8 max-w-md mx-auto">
-            <div class="text-2xl font-bold mb-2">Strategy Session - $150</div>
-            <div class="text-gray-200 text-sm">
-              • 60-minute focused consultation<br>
-              • Custom action plan<br>
-              • Follow-up resources<br>
-              • 7-day email support
-            </div>
-          </div>
+    <!-- Simple Booking Component -->
+    <div ref="bookingSection">
+      <SimpleBooking />
+    </div>
 
-          <a 
-            href="https://savvycal.com/greg-AlwaysFreeMinds/strategy" 
-            target="_blank"
-            class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-300 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 mb-8 inline-block"
-          >
-            Book Your Strategy Session Now
-          </a>
-        </div>
-
-        <!-- SavvyCal Component -->
-        <SavvyCalBooking viewType="corporate" :showInlineCalendar="true" />
-      </div>
-    </section>
-
-    <!-- Corporate Training Details -->
-    <section id="workshops" class="py-20 bg-gray-50">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Corporate Training Programs</h2>
-          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-            Custom workshops designed to transform your team's approach to hiring, inclusion, and second chances.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-12">
-          <div>
-            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Popular Workshop Topics</h3>
-            <div class="space-y-4">
-              <div class="bg-white p-4 rounded-lg shadow-sm">
-                <h4 class="font-semibold text-gray-900">Second-Chance Hiring Excellence</h4>
-                <p class="text-gray-600 text-sm">Build effective programs that reduce turnover and increase loyalty</p>
-              </div>
-              <div class="bg-white p-4 rounded-lg shadow-sm">
-                <h4 class="font-semibold text-gray-900">Unconscious Bias in Hiring</h4>
-                <p class="text-gray-600 text-sm">Identify and eliminate barriers to inclusive recruitment</p>
-              </div>
-              <div class="bg-white p-4 rounded-lg shadow-sm">
-                <h4 class="font-semibold text-gray-900">Managing Diverse Teams</h4>
-                <p class="text-gray-600 text-sm">Create environments where everyone can thrive</p>
-              </div>
-              <div class="bg-white p-4 rounded-lg shadow-sm">
-                <h4 class="font-semibold text-gray-900">Building Resilient Organizations</h4>
-                <p class="text-gray-600 text-sm">Develop cultures that support growth and transformation</p>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Investment & Packages</h3>
-            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-              <h4 class="text-xl font-semibold text-gray-900 mb-3">Half-Day Workshop</h4>
-              <div class="text-2xl font-bold text-primary-600 mb-3">$1,500</div>
-              <ul class="text-gray-600 space-y-1 text-sm">
-                <li>• 3-4 hours of interactive training</li>
-                <li>• Up to 25 participants</li>
-                <li>• Custom materials and handouts</li>
-                <li>• Action planning session</li>
-              </ul>
-            </div>
-
-            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-              <h4 class="text-xl font-semibold text-gray-900 mb-3">Full-Day Intensive</h4>
-              <div class="text-2xl font-bold text-primary-600 mb-3">$2,500</div>
-              <ul class="text-gray-600 space-y-1 text-sm">
-                <li>• 6-7 hours comprehensive training</li>
-                <li>• Up to 30 participants</li>
-                <li>• Role-playing and case studies</li>
-                <li>• Implementation roadmap</li>
-                <li>• 30-day follow-up support</li>
-              </ul>
-            </div>
-
-            <div class="bg-primary-50 p-6 rounded-lg border border-primary-200">
-              <h4 class="text-lg font-semibold text-gray-900 mb-3">Ready to Get Started?</h4>
-              <p class="text-gray-600 mb-4 text-sm">
-                Contact me to discuss your organization's specific needs and create a custom proposal.
-              </p>
-              <a 
-                href="https://savvycal.com/greg-AlwaysFreeMinds/workshop"
-                target="_blank" 
-                class="inline-block bg-primary-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200"
-              >
-                Schedule Planning Call
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section id="contact-form" class="py-20 bg-white">
+    <!-- About Section -->
+    <section class="py-20 bg-white">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-900 mb-4">Let's Discuss Your Needs</h2>
-          <p class="text-lg text-gray-600">
-            Ready to explore how second-chance hiring can transform your organization? Let's talk.
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-12">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <form class="space-y-6">
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Name *</label>
-                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Email *</label>
-                <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Organization</label>
-                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Service Interest</label>
-                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent">
-                  <option>Strategy Consulting</option>
-                  <option>Corporate Training</option>
-                  <option>Speaking Engagement</option>
-                  <option>Custom Program</option>
-                </select>
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-gray-700 mb-2">Tell me about your goals</label>
-                <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent" placeholder="What challenges are you facing? What outcomes are you hoping to achieve?"></textarea>
-              </div>
-              <button type="submit" class="w-full bg-primary-600 text-white py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-200">
-                Send Message
-              </button>
-            </form>
-          </div>
-
-          <div>
-            <div class="bg-gray-50 p-8 rounded-lg">
-              <h3 class="text-xl font-semibold text-gray-900 mb-6">Get In Touch</h3>
-              
-              <div class="space-y-4">
-                <div class="flex items-center">
-                  <svg class="w-5 h-5 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                  </svg>
-                  <span class="text-gray-700">gregory@alwaysfreeminds.com</span>
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">
+              Why This Matters
+            </h2>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              I've spent years learning what actually works when it comes to giving people second chances and building inclusive teams. Not theory—real experience from someone who's been there.
+            </p>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+              Every conversation is different. Sometimes I can help directly, sometimes I can connect you with the right resources, and sometimes just talking through the challenges helps clarify the path forward.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <span class="text-blue-600 text-sm">✓</span>
                 </div>
-                
-                <div class="flex items-center">
-                  <svg class="w-5 h-5 text-primary-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <span class="text-gray-700">Response within 24 hours</span>
-                </div>
+                <p class="text-gray-700">Real experience, not just theory</p>
               </div>
-
-              <div class="mt-8">
-                <h4 class="font-semibold text-gray-900 mb-4">Typical Project Timeline</h4>
-                <div class="space-y-3 text-sm text-gray-600">
-                  <div class="flex justify-between">
-                    <span>Discovery Call</span>
-                    <span>Day 1</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span>Proposal & Contract</span>
-                    <span>Days 2-3</span>
-                  </div>
-                  <div class="flex justify-between">
-                    <span>Program Delivery</span>
-                    <span>Week 2-4</span>
-                  </div>
+              <div class="flex items-center">
+                <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <span class="text-blue-600 text-sm">✓</span>
                 </div>
+                <p class="text-gray-700">Practical insights you can actually use</p>
+              </div>
+              <div class="flex items-center">
+                <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                  <span class="text-blue-600 text-sm">✓</span>
+                </div>
+                <p class="text-gray-700">No agenda except being helpful</p>
               </div>
             </div>
           </div>
+          <div class="text-center">
+            <div class="w-64 h-64 bg-gray-200 rounded-full mx-auto mb-6 flex items-center justify-center">
+              <span class="text-4xl font-bold text-gray-500">Greg</span>
+            </div>
+            <h3 class="text-xl font-bold text-gray-900 mb-2">Greg Barber</h3>
+            <p class="text-gray-600">Always Free Minds</p>
+          </div>
         </div>
-      </div>
-    </section>
-
-    <!-- CTA Footer -->
-    <section class="bg-primary-800 text-white py-16">
-      <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Unlock Your Organization's Potential?</h2>
-        <p class="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
-          Every person deserves a second chance. Every organization deserves access to untapped talent. 
-          Let's make both happen.
-        </p>
-        <button 
-          @click="scrollToBooking"
-          class="inline-flex items-center justify-center bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-yellow-300 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
-        >
-          Start Your Transformation Today
-        </button>
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import SavvyCalBooking from '@/components/booking/SavvyCalBooking.vue'
+import SimpleBooking from '@/components/booking/SimpleBooking.vue'
 
 export default {
-  name: 'ConsultingRevenue',
+  name: 'ConsultingPage',
   components: {
-    SavvyCalBooking
+    SimpleBooking
   },
   methods: {
     scrollToBooking() {
