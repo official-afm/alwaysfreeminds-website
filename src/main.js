@@ -10,3 +10,4 @@ app.use(store)
 app.use(router)
 
 app.mount('#app')
+import './assets/css/effects.css'
